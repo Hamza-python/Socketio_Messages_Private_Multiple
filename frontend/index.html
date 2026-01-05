@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Socket.IO Chat</h2>
+
+<input id="username" placeholder="Username">
+<button onclick="join()">Join</button>
+
+<hr>
+
+<h3>Private Chat</h3>
+<input id="toUser" placeholder="Send to">
+<input id="privateMsg" placeholder="Message">
+<button onclick="sendPrivate()">Send</button>
+
+<hr>
+
+<h3>Group Chat</h3>
+<input id="room" placeholder="Room name">
+<button onclick="joinRoom()">Join Room</button>
+
+<input id="groupMsg" placeholder="Group message">
+<button onclick="sendGroup()">Send</button>
+
+<ul id="messages"></ul>
+
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
